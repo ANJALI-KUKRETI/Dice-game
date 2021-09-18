@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <div class="full">
+      <header>
+        <h1 class="game-rules-title">GAME RULES</h1>
+        <div class="wrapper hidden">
+          <div class="game-rules hidden">
+            <p>
+              <span class="cross">❌</span> On a turn, a player rolls the die 🎲
+              repeatedly. The goal is to accumulate as many points as possible,
+              adding up (hold) the numbers rolled on the die 🎲. However, if a
+              player rolls a <span>1</span>, the player's turn is over and any
+              points they have accumulated during this turn are forfeited.
+              Rolling a <span>1</span> doesn't wipe out your entire score from
+              previous turns, just the total earned during that particular roll.
+              A player has to choose to hold (stop rolling the die 🎲) if they
+              do not want to take a chance of rolling a
+              <span>1</span>
+              and losing all of their points from this turn. If the player
+              chooses to hold, all of the points rolled during that turn are
+              added to his or her score. When a player reaches a total of
+              <span>100</span> points, the game ends and that player is the
+              winner.
+            </p>
+            <div>...</div>
+            <p></p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="player player--0 player--active">
+          <h2 class="name" id="name--0">Player 1</h2>
+          <p class="score" id="score--0">43</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--0">0</p>
+          </div>
+        </section>
+        <section class="player player--1">
+          <h2 class="name" id="name--1">Player 2</h2>
+          <p class="score" id="score--1">24</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </section>
+
+        <img src="dice-5.png" alt="Playing dice" class="dice" />
+        <button class="btn btn--new">🔄 New game</button>
+        <button class="btn btn--roll">🎲 Roll dice</button>
+        <button class="btn btn--hold">📥 Hold</button>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
